@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" version="2.5">
+  
+  <servlet>
+    <description>Java to JSON String</description>
+    <servlet-name>JavaStringToJson</servlet-name>
+    <servlet-class>com.kp.json.JavaStringToJson</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>JavaStringToJson</servlet-name>
+    <url-pattern>/JavaStringToJson</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description>Java to JSON Object</description>
+    <servlet-name>JavaToJsonObj</servlet-name>
+    <servlet-class>com.kp.json.JavaToJsonObj</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>JavaToJsonObj</servlet-name>
+    <url-pattern>/JavaToJsonObj</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description></description>
+    <display-name>JavaToJsonArray</display-name>
+    <servlet-name>JavaToJsonArray</servlet-name>
+    <servlet-class>com.kp.json.JavaToJsonArray</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>JavaToJsonArray</servlet-name>
+    <url-pattern>/JavaToJsonArray</url-pattern>
+  </servlet-mapping>
+</web-app>
